@@ -1,0 +1,120 @@
+/* CSS styles for the top section */
+header {
+   
+/* Set the background color as desired */
+    text-align: center;
+
+  z-index: 2;
+  height: auto;
+  width: 100%;
+}
+
+
+/* Style for the left button */
+.left {
+  position: fixed;
+  left: -0.02px;
+  top: 100px;
+  width: 55%;
+  height: 90%;
+  background-color:red; /* Green color, you can change it */
+  color: white;
+  font-size: 50px;
+  border: none;
+  cursor: pointer;
+  transition: width 0.3s ease;
+  z-index: 1;
+ 
+}
+
+/* Style for the right button */
+.right {
+  position: fixed;
+  right: 0;
+  width: 50%;
+  top:100px;
+  height: 90%;
+  background-color: #FF7F50; /* Red color, you can change it */
+  color: black;
+  font-size: 50px;
+  border: none;
+  cursor: pointer;
+  transition: width 0.3s ease; /* Transition for width change */
+  z-index: 1;
+
+ }
+
+/* Hidden text for left button */
+.left .hidden-text {
+  display: none;
+  margin-top: 10px; /* Adjust the margin as needed */
+  font-size: 14px; /* Adjust the font size as needed */
+  animation: fadeInLeft 0.5s ease forwards;
+}
+
+/* Hidden text for right button */
+.right .hidden-text {
+  display: none;
+  margin-top: 10px; /* Adjust the margin as needed */
+  font-size: 14px; /* Adjust the font size as needed */
+  animation: fadeInRight 0.5s ease forwards;
+}
+
+@keyframes fadeInLeft {
+   0% {
+      opacity: 0;
+      transform: translateX(-20px);
+   }
+   100% {
+      opacity: 1;
+      transform: translateX(0);
+   }
+}   
+
+@keyframes fadeInRight {
+   0% {
+      opacity: 0;
+      transform: translateX(20px);
+   }
+   100% {
+      opacity: 1;
+      transform: translateX(0);
+   }
+} 
+
+/* Hover styles for left button */
+.left:hover {
+  width: 80%;
+}
+
+.left:hover + .right {
+  width: 20%;
+  color: rgba(0,0,0,0);
+}
+
+/* Hover styles for right button */
+.right:hover {
+  width: 80%;
+}
+
+.right:hover + .left {
+  width: 20%;
+    color: rgba(0,0,0,0);
+}
+
+.left:hover .hidden-text {
+  display: inline;
+  font-size: 50%;
+  text-align:center ;
+  padding-left: 100px;
+  padding-bottom: 70px;
+}
+
+
+.right:hover .hidden-text {
+  display: inline;
+  font-size: 50%;
+  text-align:center ;
+  padding-right:100px ;
+}
+

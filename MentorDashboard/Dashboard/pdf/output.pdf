@@ -1,0 +1,368 @@
+cd C:\Users\HP\Documents\NetBeansProjects\GroupAssignment508; "JAVA_HOME=C:\\Program Files\\Java\\jdk1.8.0_111" cmd /c "\"\"C:\\Program Files\\NetBeans 8.2\\java\\maven\\bin\\mvn.bat\" -Dexec.args=\"-classpath %classpath com.mycompany.groupassignment508.AppLinkedList\" -Dexec.executable=\"C:\\Program Files\\Java\\jdk1.8.0_111\\bin\\java.exe\" -Dexec.classpathScope=runtime -Dmaven.ext.class.path=\"C:\\Program Files\\NetBeans 8.2\\java\\maven-nblib\\netbeans-eventspy.jar\" -Dfile.encoding=UTF-8 --debug --errors --debug --errors org.codehaus.mojo:exec-maven-plugin:1.2.1:exec\""
+Running NetBeans Compile On Save execution. Phase execution is skipped and output directories of dependency projects (with Compile on Save turned on) will be used instead of their jar artifacts.
+Apache Maven 3.0.5 (r01de14724cdef164cd33c7c8c2fe155faf9602da; 2013-02-19 21:51:28+0800)
+Maven home: C:\Program Files\NetBeans 8.2\java\maven
+Java version: 1.8.0_111, vendor: Oracle Corporation
+Java home: C:\Program Files\Java\jdk1.8.0_111\jre
+Default locale: en_MY, platform encoding: Cp1252
+OS name: "windows 10", version: "10.0", arch: "amd64", family: "dos"
+Populating class realm maven.ext
+  Included C:\Program Files\NetBeans 8.2\java\maven-nblib\netbeans-eventspy.jar
+Error stacktraces are turned on.
+Reading global settings from C:\Program Files\NetBeans 8.2\java\maven\conf\settings.xml
+Reading user settings from C:\Users\HP\.m2\settings.xml
+Using local repository at C:\Users\HP\.m2\repository
+Using manager EnhancedLocalRepositoryManager with priority 10 for C:\Users\HP\.m2\repository
+Scanning for projects...
+Extension realms for project com.mycompany:GroupAssignment508:jar:1.0-SNAPSHOT: (none)
+Looking up lifecyle mappings for packaging jar from ClassRealm[maven.ext, parent: ClassRealm[plexus.core, parent: null]]
+=== REACTOR BUILD PLAN ================================================
+Project: com.mycompany:GroupAssignment508:jar:1.0-SNAPSHOT
+Tasks:   [org.codehaus.mojo:exec-maven-plugin:1.2.1:exec]
+Style:   Regular
+=======================================================================
+                                                                        
+------------------------------------------------------------------------
+Building GroupAssignment508 1.0-SNAPSHOT
+------------------------------------------------------------------------
+Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+Lifecycle clean -> [pre-clean, clean, post-clean]
+Lifecycle site -> [pre-site, site, post-site, site-deploy]
+=== PROJECT BUILD PLAN ================================================
+Project:       com.mycompany:GroupAssignment508:1.0-SNAPSHOT
+Dependencies (collect): []
+Dependencies (resolve): [test]
+Repositories (dependencies): [mirrorDnomaid (https://repo.maven.apache.org/maven2, releases)]
+Repositories (plugins)     : [mirrorDnomaid (https://repo.maven.apache.org/maven2, releases)]
+-----------------------------------------------------------------------
+Goal:          org.codehaus.mojo:exec-maven-plugin:1.2.1:exec (default-cli)
+Style:         Regular
+Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <basedir default-value="${basedir}"/>
+  <classpathScope default-value="runtime">${exec.classpathScope}</classpathScope>
+  <commandlineArgs>${exec.args}</commandlineArgs>
+  <executable>${exec.executable}</executable>
+  <longClasspath default-value="false">${exec.longClasspath}</longClasspath>
+  <outputFile>${exec.outputFile}</outputFile>
+  <project default-value="${project}"/>
+  <session default-value="${session}"/>
+  <skip default-value="false">${skip}</skip>
+  <sourceRoot>${sourceRoot}</sourceRoot>
+  <testSourceRoot>${testSourceRoot}</testSourceRoot>
+  <workingDirectory>${exec.workingdir}</workingDirectory>
+</configuration>
+=======================================================================
+com.mycompany:GroupAssignment508:jar:1.0-SNAPSHOT
+
+--- exec-maven-plugin:1.2.1:exec (default-cli) @ GroupAssignment508 ---
+Created new class realm maven.api
+Importing foreign packages into class realm maven.api
+  Imported: org.apache.maven.cli < maven.ext
+  Imported: org.codehaus.plexus.lifecycle < maven.ext
+  Imported: org.apache.maven.lifecycle < maven.ext
+  Imported: org.apache.maven.repository < maven.ext
+  Imported: org.codehaus.plexus.personality < maven.ext
+  Imported: org.apache.maven.usability < maven.ext
+  Imported: org.codehaus.plexus.configuration < maven.ext
+  Imported: org.sonatype.aether.version < maven.ext
+  Imported: org.sonatype.aether.* < maven.ext
+  Imported: org.sonatype.aether.artifact < maven.ext
+  Imported: org.apache.maven.* < maven.ext
+  Imported: org.apache.maven.project < maven.ext
+  Imported: org.sonatype.aether.repository < maven.ext
+  Imported: org.sonatype.aether.impl < maven.ext
+  Imported: org.apache.maven.exception < maven.ext
+  Imported: org.apache.maven.plugin < maven.ext
+  Imported: org.sonatype.aether.collection < maven.ext
+  Imported: org.codehaus.plexus.* < maven.ext
+  Imported: org.codehaus.plexus.logging < maven.ext
+  Imported: org.apache.maven.profiles < maven.ext
+  Imported: org.sonatype.aether.metadata < maven.ext
+  Imported: org.sonatype.aether.spi < maven.ext
+  Imported: org.codehaus.plexus.util.xml.pull.XmlPullParserException < maven.ext
+  Imported: org.apache.maven.wagon.* < maven.ext
+  Imported: org.sonatype.aether.graph < maven.ext
+  Imported: org.apache.maven.rtinfo < maven.ext
+  Imported: org.sonatype.aether.installation < maven.ext
+  Imported: org.apache.maven.monitor < maven.ext
+  Imported: org.sonatype.aether.transfer < maven.ext
+  Imported: org.codehaus.plexus.context < maven.ext
+  Imported: org.apache.maven.wagon.observers < maven.ext
+  Imported: org.apache.maven.wagon.resource < maven.ext
+  Imported: org.sonatype.aether.deployment < maven.ext
+  Imported: org.apache.maven.model < maven.ext
+  Imported: org.codehaus.plexus.util.xml.Xpp3Dom < maven.ext
+  Imported: org.apache.maven.artifact < maven.ext
+  Imported: org.apache.maven.toolchain < maven.ext
+  Imported: org.codehaus.plexus.util.xml.pull.XmlSerializer < maven.ext
+  Imported: org.apache.maven.settings < maven.ext
+  Imported: org.apache.maven.wagon.authorization < maven.ext
+  Imported: org.apache.maven.wagon.events < maven.ext
+  Imported: org.apache.maven.wagon.authentication < maven.ext
+  Imported: org.apache.maven.reporting < maven.ext
+  Imported: org.apache.maven.wagon.repository < maven.ext
+  Imported: org.apache.maven.configuration < maven.ext
+  Imported: org.codehaus.plexus.classworlds < maven.ext
+  Imported: org.codehaus.classworlds < maven.ext
+  Imported: org.codehaus.plexus.util.xml.pull.XmlPullParser < maven.ext
+  Imported: org.apache.maven.classrealm < maven.ext
+  Imported: org.sonatype.aether.resolution < maven.ext
+  Imported: org.apache.maven.execution < maven.ext
+  Imported: org.apache.maven.wagon.proxy < maven.ext
+  Imported: org.codehaus.plexus.container < maven.ext
+  Imported: org.codehaus.plexus.component < maven.ext
+Populating class realm maven.api
+Using mirror mirrorDnomaid (https://repo.maven.apache.org/maven2) for central (http://repo.maven.apache.org/maven2).
+Using mirror mirrorDnomaid (https://repo.maven.apache.org/maven2) for central (http://repo.maven.apache.org/maven2).
+Using mirror mirrorDnomaid (https://repo.maven.apache.org/maven2) for central (http://repo.maven.apache.org/maven2).
+Using mirror mirrorDnomaid (https://repo.maven.apache.org/maven2) for central (http://repo.maven.apache.org/maven2).
+Using mirror mirrorDnomaid (https://repo.maven.apache.org/maven2) for central (http://repo.maven.apache.org/maven2).
+Using mirror mirrorDnomaid (https://repo.maven.apache.org/maven2) for central (http://repo.maven.apache.org/maven2).
+Using mirror mirrorDnomaid (https://repo.maven.apache.org/maven2) for central (http://repo.maven.apache.org/maven2).
+Using mirror mirrorDnomaid (https://repo.maven.apache.org/maven2) for central (http://repo.maven.apache.org/maven2).
+Using mirror mirrorDnomaid (https://repo.maven.apache.org/maven2) for central (http://repo1.maven.org/maven2).
+Using mirror mirrorDnomaid (https://repo.maven.apache.org/maven2) for central (http://repo1.maven.org/maven2).
+Using mirror mirrorDnomaid (https://repo.maven.apache.org/maven2) for central (http://repo.maven.apache.org/maven2).
+Using mirror mirrorDnomaid (https://repo.maven.apache.org/maven2) for central (http://repo.maven.apache.org/maven2).
+Using mirror mirrorDnomaid (https://repo.maven.apache.org/maven2) for central (http://repo.maven.apache.org/maven2).
+Using mirror mirrorDnomaid (https://repo.maven.apache.org/maven2) for central (http://repo.maven.apache.org/maven2).
+Using mirror mirrorDnomaid (https://repo.maven.apache.org/maven2) for central (http://repo.maven.apache.org/maven2).
+Using mirror mirrorDnomaid (https://repo.maven.apache.org/maven2) for central (http://repo.maven.apache.org/maven2).
+Using mirror mirrorDnomaid (https://repo.maven.apache.org/maven2) for central (http://repo.maven.apache.org/maven2).
+Using mirror mirrorDnomaid (https://repo.maven.apache.org/maven2) for central (http://repo.maven.apache.org/maven2).
+Using mirror mirrorDnomaid (https://repo.maven.apache.org/maven2) for central (http://repo.maven.apache.org/maven2).
+Using mirror mirrorDnomaid (https://repo.maven.apache.org/maven2) for central (http://repo.maven.apache.org/maven2).
+Using mirror mirrorDnomaid (https://repo.maven.apache.org/maven2) for central (http://repo.maven.apache.org/maven2).
+Using mirror mirrorDnomaid (https://repo.maven.apache.org/maven2) for central (http://repo.maven.apache.org/maven2).
+Using mirror mirrorDnomaid (https://repo.maven.apache.org/maven2) for central (http://repo.maven.apache.org/maven2).
+Using mirror mirrorDnomaid (https://repo.maven.apache.org/maven2) for central (http://repo.maven.apache.org/maven2).
+Using mirror mirrorDnomaid (https://repo.maven.apache.org/maven2) for central (http://repo.maven.apache.org/maven2).
+Using mirror mirrorDnomaid (https://repo.maven.apache.org/maven2) for central (http://repo.maven.apache.org/maven2).
+Using mirror mirrorDnomaid (https://repo.maven.apache.org/maven2) for central (http://repo.maven.apache.org/maven2).
+Using mirror mirrorDnomaid (https://repo.maven.apache.org/maven2) for central (http://repo.maven.apache.org/maven2).
+Using mirror mirrorDnomaid (https://repo.maven.apache.org/maven2) for central (http://repo.maven.apache.org/maven2).
+Using mirror mirrorDnomaid (https://repo.maven.apache.org/maven2) for central (http://repo.maven.apache.org/maven2).
+Using mirror mirrorDnomaid (https://repo.maven.apache.org/maven2) for central (http://repo.maven.apache.org/maven2).
+Using mirror mirrorDnomaid (https://repo.maven.apache.org/maven2) for central (http://repo.maven.apache.org/maven2).
+Using mirror mirrorDnomaid (https://repo.maven.apache.org/maven2) for central (http://repo.maven.apache.org/maven2).
+Using mirror mirrorDnomaid (https://repo.maven.apache.org/maven2) for central (http://repo.maven.apache.org/maven2).
+Using mirror mirrorDnomaid (https://repo.maven.apache.org/maven2) for central (http://repo.maven.apache.org/maven2).
+Using mirror mirrorDnomaid (https://repo.maven.apache.org/maven2) for central (http://repo.maven.apache.org/maven2).
+Using mirror mirrorDnomaid (https://repo.maven.apache.org/maven2) for central (http://repo.maven.apache.org/maven2).
+Using mirror mirrorDnomaid (https://repo.maven.apache.org/maven2) for central (http://repo.maven.apache.org/maven2).
+Using mirror mirrorDnomaid (https://repo.maven.apache.org/maven2) for central (http://repo.maven.apache.org/maven2).
+Using mirror mirrorDnomaid (https://repo.maven.apache.org/maven2) for central (http://repo.maven.apache.org/maven2).
+Using mirror mirrorDnomaid (https://repo.maven.apache.org/maven2) for central (http://repo.maven.apache.org/maven2).
+Using mirror mirrorDnomaid (https://repo.maven.apache.org/maven2) for central (http://repo.maven.apache.org/maven2).
+Using mirror mirrorDnomaid (https://repo.maven.apache.org/maven2) for central (http://repo.maven.apache.org/maven2).
+Using mirror mirrorDnomaid (https://repo.maven.apache.org/maven2) for central (http://repo.maven.apache.org/maven2).
+Using mirror mirrorDnomaid (https://repo.maven.apache.org/maven2) for central (http://repo.maven.apache.org/maven2).
+Using mirror mirrorDnomaid (https://repo.maven.apache.org/maven2) for central (http://repo.maven.apache.org/maven2).
+Using mirror mirrorDnomaid (https://repo.maven.apache.org/maven2) for central (http://repo.maven.apache.org/maven2).
+Using mirror mirrorDnomaid (https://repo.maven.apache.org/maven2) for central (http://repo1.maven.org/maven2).
+Using mirror mirrorDnomaid (https://repo.maven.apache.org/maven2) for central (http://repo1.maven.org/maven2).
+Using mirror mirrorDnomaid (https://repo.maven.apache.org/maven2) for central (http://repo.maven.apache.org/maven2).
+Using mirror mirrorDnomaid (https://repo.maven.apache.org/maven2) for central (http://repo.maven.apache.org/maven2).
+Using mirror mirrorDnomaid (https://repo.maven.apache.org/maven2) for central (http://repo.maven.apache.org/maven2).
+Using mirror mirrorDnomaid (https://repo.maven.apache.org/maven2) for central (http://repo.maven.apache.org/maven2).
+Using mirror mirrorDnomaid (https://repo.maven.apache.org/maven2) for central (http://repo.maven.apache.org/maven2).
+Using mirror mirrorDnomaid (https://repo.maven.apache.org/maven2) for central (http://repo.maven.apache.org/maven2).
+Using mirror mirrorDnomaid (https://repo.maven.apache.org/maven2) for central (http://repo.maven.apache.org/maven2).
+Using mirror mirrorDnomaid (https://repo.maven.apache.org/maven2) for central (http://repo.maven.apache.org/maven2).
+Using mirror mirrorDnomaid (https://repo.maven.apache.org/maven2) for central (http://repo.maven.apache.org/maven2).
+Using mirror mirrorDnomaid (https://repo.maven.apache.org/maven2) for central (http://repo.maven.apache.org/maven2).
+Using mirror mirrorDnomaid (https://repo.maven.apache.org/maven2) for central (http://repo.maven.apache.org/maven2).
+Using mirror mirrorDnomaid (https://repo.maven.apache.org/maven2) for central (http://repo.maven.apache.org/maven2).
+Using mirror mirrorDnomaid (https://repo.maven.apache.org/maven2) for central (http://repo1.maven.org/maven2).
+Using mirror mirrorDnomaid (https://repo.maven.apache.org/maven2) for central (http://repo.maven.apache.org/maven2).
+org.codehaus.mojo:exec-maven-plugin:jar:1.2.1:
+   org.apache.maven:maven-toolchain:jar:1.0:compile
+   org.apache.maven:maven-project:jar:2.0.6:compile
+      org.apache.maven:maven-settings:jar:2.0.6:compile
+      org.apache.maven:maven-profile:jar:2.0.6:compile
+      org.apache.maven:maven-plugin-registry:jar:2.0.6:compile
+   org.apache.maven:maven-model:jar:2.0.6:compile
+   org.apache.maven:maven-artifact:jar:2.0.6:compile
+   org.apache.maven:maven-artifact-manager:jar:2.0.6:compile
+      org.apache.maven:maven-repository-metadata:jar:2.0.6:compile
+   org.apache.maven:maven-core:jar:2.0.6:compile
+      org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.6:compile
+      org.apache.maven.reporting:maven-reporting-api:jar:2.0.6:compile
+         org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-7:compile
+      org.apache.maven:maven-error-diagnostics:jar:2.0.6:compile
+      commons-cli:commons-cli:jar:1.0:compile
+      org.apache.maven:maven-plugin-descriptor:jar:2.0.6:compile
+      org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4:compile
+      org.apache.maven:maven-monitor:jar:2.0.6:compile
+      classworlds:classworlds:jar:1.1:compile
+   org.apache.maven:maven-plugin-api:jar:2.0.6:compile
+   org.codehaus.plexus:plexus-utils:jar:2.0.5:compile
+   org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9:compile
+      junit:junit:jar:3.8.2:test (scope managed from compile) (version managed from 3.8.1)
+   org.apache.commons:commons-exec:jar:1.1:compile
+Created new class realm plugin>org.codehaus.mojo:exec-maven-plugin:1.2.1
+Importing foreign packages into class realm plugin>org.codehaus.mojo:exec-maven-plugin:1.2.1
+  Imported:  < maven.api
+Populating class realm plugin>org.codehaus.mojo:exec-maven-plugin:1.2.1
+  Included: org.codehaus.mojo:exec-maven-plugin:jar:1.2.1
+  Included: org.apache.maven.reporting:maven-reporting-api:jar:2.0.6
+  Included: org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-7
+  Included: commons-cli:commons-cli:jar:1.0
+  Included: org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4
+  Included: org.codehaus.plexus:plexus-utils:jar:2.0.5
+  Included: org.apache.commons:commons-exec:jar:1.1
+  Excluded: org.apache.maven:maven-toolchain:jar:1.0
+  Excluded: org.apache.maven:maven-project:jar:2.0.6
+  Excluded: org.apache.maven:maven-settings:jar:2.0.6
+  Excluded: org.apache.maven:maven-profile:jar:2.0.6
+  Excluded: org.apache.maven:maven-plugin-registry:jar:2.0.6
+  Excluded: org.apache.maven:maven-model:jar:2.0.6
+  Excluded: org.apache.maven:maven-artifact:jar:2.0.6
+  Excluded: org.apache.maven:maven-artifact-manager:jar:2.0.6
+  Excluded: org.apache.maven:maven-repository-metadata:jar:2.0.6
+  Excluded: org.apache.maven:maven-core:jar:2.0.6
+  Excluded: org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.6
+  Excluded: org.apache.maven:maven-error-diagnostics:jar:2.0.6
+  Excluded: org.apache.maven:maven-plugin-descriptor:jar:2.0.6
+  Excluded: org.apache.maven:maven-monitor:jar:2.0.6
+  Excluded: classworlds:classworlds:jar:1.1
+  Excluded: org.apache.maven:maven-plugin-api:jar:2.0.6
+  Excluded: org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9
+  Excluded: junit:junit:jar:3.8.2
+Configuring mojo org.codehaus.mojo:exec-maven-plugin:1.2.1:exec from plugin realm ClassRealm[plugin>org.codehaus.mojo:exec-maven-plugin:1.2.1, parent: sun.misc.Launcher$AppClassLoader@55f96302]
+Configuring mojo 'org.codehaus.mojo:exec-maven-plugin:1.2.1:exec' with basic configurator -->
+  (f) basedir = C:\Users\HP\Documents\NetBeansProjects\GroupAssignment508
+  (f) classpathScope = runtime
+  (f) commandlineArgs = -classpath %classpath com.mycompany.groupassignment508.AppLinkedList
+  (f) executable = C:\Program Files\Java\jdk1.8.0_111\bin\java.exe
+  (f) longClasspath = false
+  (f) project = MavenProject: com.mycompany:GroupAssignment508:1.0-SNAPSHOT @ C:\Users\HP\Documents\NetBeansProjects\GroupAssignment508\pom.xml
+  (f) session = org.apache.maven.execution.MavenSession@63fbfaeb
+  (f) skip = false
+-- end configuration --
+Collected project artifacts []
+Collected project classpath [C:\Users\HP\Documents\NetBeansProjects\GroupAssignment508\target\classes]
+Toolchains are ignored, 'executable' parameter is set to C:\Program Files\Java\jdk1.8.0_111\bin\java.exe
+Executing command line: C:\Program Files\Java\jdk1.8.0_111\bin\java.exe -classpath C:\Users\HP\Documents\NetBeansProjects\GroupAssignment508\target\classes com.mycompany.groupassignment508.AppLinkedList
+Enter details for 10 books:
+
+Book 1:
+Enter title: Fruit of Life
+Enter author: John Doe
+Enter year of publication: 2019
+Enter book price: 50
+
+Book 2:
+Enter title: Up n Down
+Enter author: Kokomelon
+Enter year of publication: 2023
+Enter book price: 48
+
+Book 3:
+Enter title: Human Resource
+Enter author: Bobo
+Enter year of publication: 2017
+Enter book price: 87
+
+Book 4:
+Enter title: Your Memories
+Enter author: Indra
+Enter year of publication: 2022
+Enter book price: 66
+
+Book 5:
+Enter title: Grapes Sour
+Enter author: Grandma
+Enter year of publication: 2011
+Enter book price: 16
+
+Book 6:
+Enter title: Koko
+Enter author: John Doe
+Enter year of publication: 2003
+Enter book price: 42
+
+Book 7:
+Enter title: Lamp
+Enter author: Junji
+Enter year of publication: 2020
+Enter book price: 64
+
+Book 8:
+Enter title: Love Hurts
+Enter author: Bobo
+Enter year of publication: 2009
+Enter book price: 20
+
+Book 9:
+Enter title: Cup of Tea
+Enter author: Grandpa
+Enter year of publication: 2010
+Enter book price: 58
+
+Book 10:
+Enter title: Bottle
+Enter author: Bobo
+Enter year of publication: 2009
+Enter book price: 28
+The contents of the linked list are: Book{title= Fruit of Life, author= John Doe, year= 2019, price= RM50.0}
+ Book{title= Up n Down, author= Kokomelon, year= 2023, price= RM48.0}
+ Book{title= Human Resource, author= Bobo, year= 2017, price= RM87.0}
+ Book{title= Your Memories, author= Indra, year= 2022, price= RM66.0}
+ Book{title= Grapes Sour, author= Grandma, year= 2011, price= RM16.0}
+ Book{title= Koko, author= John Doe, year= 2003, price= RM42.0}
+ Book{title= Lamp, author= Junji, year= 2020, price= RM64.0}
+ Book{title= Love Hurts, author= Bobo, year= 2009, price= RM20.0}
+ Book{title= Cup of Tea, author= Grandpa, year= 2010, price= RM58.0}
+ Book{title= Bottle, author= Bobo, year= 2009, price= RM28.0}
+ 
+
+
+Books Released before 2020:
+Book{title= Fruit of Life, author= John Doe, year= 2019, price= RM50.0}
+
+Book{title= Human Resource, author= Bobo, year= 2017, price= RM87.0}
+
+Book{title= Grapes Sour, author= Grandma, year= 2011, price= RM16.0}
+
+Book{title= Koko, author= John Doe, year= 2003, price= RM42.0}
+
+Book{title= Love Hurts, author= Bobo, year= 2009, price= RM20.0}
+
+Book{title= Cup of Tea, author= Grandpa, year= 2010, price= RM58.0}
+
+Book{title= Bottle, author= Bobo, year= 2009, price= RM28.0}
+
+
+Most Expensive Book:
+Book{title= Human Resource, author= Bobo, year= 2017, price= RM87.0}
+
+
+Cheapest Book:
+Book{title= Grapes Sour, author= Grandma, year= 2011, price= RM16.0}
+
+
+Books remaining in BookLL:
+The contents of the linked list are: Book{title= Fruit of Life, author= John Doe, year= 2019, price= RM50.0}
+ Book{title= Up n Down, author= Kokomelon, year= 2023, price= RM48.0}
+ Book{title= Human Resource, author= Bobo, year= 2017, price= RM87.0}
+ Book{title= Your Memories, author= Indra, year= 2022, price= RM66.0}
+ Book{title= Grapes Sour, author= Grandma, year= 2011, price= RM16.0}
+ Book{title= Koko, author= John Doe, year= 2003, price= RM42.0}
+ Book{title= Lamp, author= Junji, year= 2020, price= RM64.0}
+ Book{title= Love Hurts, author= Bobo, year= 2009, price= RM20.0}
+ Book{title= Cup of Tea, author= Grandpa, year= 2010, price= RM58.0}
+ Book{title= Bottle, author= Bobo, year= 2009, price= RM28.0}
+ 
+
+
+Books in Book_LL_Old:
+The list is Empty
+------------------------------------------------------------------------
+BUILD SUCCESS
+------------------------------------------------------------------------
+Total time: 5:08.754s
+Finished at: Sat Dec 14 00:37:09 SGT 2024
+Final Memory: 5M/113M
+------------------------------------------------------------------------

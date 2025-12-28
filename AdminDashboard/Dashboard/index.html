@@ -1,0 +1,138 @@
+<?php 
+include 'c:\xampp\htdocs\MainVbuddy\datavbuddy.php';
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard</title>
+  <link rel="shortcut icon" href="images/dashboard.png" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo" title="Admin Dashboard">
+      <a rel="noopener" href="index.html">
+        <img src="images/dashboard.png" alt="" />
+      </a>
+	  
+      <a href="index.html">
+        <h2 style= font-size:15px>Admin Dashboard</h2>
+      </a>
+    </div>
+	
+    <div class="navbar">
+      <a href="index.html" class="active">
+        <span class="material-icons-sharp">home</span>
+        <h3 style= font-size:10px>Home</h3>
+      </a>
+	  
+      <a href="Request.php" onclick="timeTableAll()">
+        <span class="material-icons-sharp">book</span>
+        <h3 style= font-size:10px>Request</h3>
+      </a>
+	  
+       <a href="assign.php" onclick="timeTableAll()">
+        <span class="material-icons-sharp">book</span>
+        <h3 style= font-size:10px>Assign</h3>
+      </a>
+	  
+      <a href="Report.php" >
+        <span class="material-icons-sharp">report</span>
+        <h3 style= font-size:10px>Report</h3>
+      </a>
+	  
+	  <a href="coming.php">
+        <span class="material-icons-sharp">book</span>
+        <h3 style= font-size:10px>Manage Subject</h3>
+      </a>
+	  
+      <a href="password.html">
+        <span class="material-icons-sharp">password</span>
+        <h3  style= font-size:10px>Change Password</h3>
+      </a>
+	  
+      <a href="../index.html">
+        <span class="material-icons-sharp" onclick="">logout</span>
+        <h3  style= font-size:10px>Logout</h3>
+      </a>
+    </div>
+      </a>
+    </div>
+    <div id="profile-btn">
+      <span class="material-icons-sharp">person</span>
+    </div>
+    <div class="theme-toggler">
+      <span class="material-icons-sharp active">light_mode</span>
+      <span class="material-icons-sharp">dark_mode</span>
+    </div>
+	
+	
+  </header>
+  <div class="container">
+    <aside>
+      <div class="profile">
+        <div class="top">
+          <div class="profile-photo">
+            <img src="images/avatar.png" alt="avatar" />
+          </div>
+		  
+		
+          
+        </div>
+        <div class="about">
+          <h5>Course</h5>
+          <p>Computer Science</p>
+          <h5>DOB</h5>
+          <p>15-Sept-2000</p>
+          <h5>Contact</h5>
+          <p>08037238242</p>
+          <h5>Email</h5>
+          <p>somto@mail.com</p>
+          <h5>Address</h5>
+          <p>Enugu, Enugu State</p>
+          <br />
+          <br />
+          <a href="../Profile/profile.html">
+            <h5>Edit Profile</h5>
+            <p>Edit your profile details</p>
+          </a>
+          <a href="../Academic Session/index.html">
+            <h5>Change Session</h5>
+            <p>Change Academic Session</p>
+          </a>
+          <a href="../Records/index.html">
+            <h5>Student Records</h5>
+            <p>Cummulative Records</p>
+          </a>
+        </div>
+      </div>
+    </aside>
+	
+<main>
+        <h1>Courses</h1>
+        <div class="exam timetable2">
+            <p>
+              <b>Academic</b> <br />
+              This is to inform the general public that admission into
+              certificate programmes, first and higher degrees at ESUT
+              Institute of Education (Sandwich Programme) for the 2022/2023
+              academic session is ongoing in the following departments.
+            </p>
+            <small class="text-muted">2 Minutes Ago</small>
+          </div>
+
+
+</main>
+
+  <script src="timeTable.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

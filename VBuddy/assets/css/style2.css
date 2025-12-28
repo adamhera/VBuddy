@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+header{
+	text-align: center;
+	/*z-index: 2;*/
+}
+
+body{
+	/*background-image: url(assets/img/gallery/studybg.jpg);*/
+	background-color: #5a76fd;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+h1{
+	font-family: 'Poppins', sans-serif;
+	text-align: center;
+	padding-top: 2 rem;
+	color: #fff;
+	size: 130%;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+p{
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	line-height: 30px;
+	margin-bottom: 15px;
+	font-weight: normal;
+}
+
+header .navbar{
+	display: flex;
+	align-items: center;
+	/*position: absolute;*/
+	padding-top: 1.5rem;
+	padding-left: 3rem;
+	padding-right: 3rem;
+	/*height: 3.7rem;*/
+	/*gap: 0.5rem;*/
+	justify-content: space-between;
+}
+
+header .navbar a{
+	color: #363949;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	position: relative;
+    transition: all 300ms ease;
+}
+
+header .navbar a:hover{
+	color: #f6f6f9;
+}
+
+.btn{
+	border-radius:50px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	padding: 8px 22px;
+	justify-content: center;
+	width: 60%;
+	height: 65%;
+	position: fixed;
+	display: flex;
+	border: none;
+	right: 10rem;
+	top: 120px;
+	left: 19%;
+	align-items: center;
+	background-color: #677483;
+	color: #f6f6f9;
+	font-size: 50px;
+	font-family: 'Poppins', sans-serif;
+	cursor: pointer;
+	transition: width 0.3s ease; /* Transition for width change */
+}
+.btn .hidden-text {
+	font-family: 'Poppins', sans-serif;
+	display: none;
+	/* text-align: right;*/
+	margin-top: 10px; /* Adjust the margin as needed */
+	font-size: 14px; /* Adjust the font size as needed */
+	animation: fadeInRight 0.5s ease forwards;
+}
+/* Hover styles for right button */
+
+.btn:hover .hidden-text {
+	font-family: 'Poppins', sans-serif;
+	display: inline;
+	font-size: 50%;
+	font-color: #f6f6f9;
+	text-align: center;
+	padding-right:100px;
+	padding-left: 100px;
+	padding-bottom: 70px;
+	padding-top: 70px;
+}
+.btn:hover .nothidden-text {
+	font-family: 'Poppins', sans-serif;
+	display: none;
+	font-size: 50%;
+	font-color: #f6f6f9;
+	text-align: center;
+	padding-right:100px;
+	padding-bottom: 70px;
+}
+
+.fade-in {
+	animation: fade-in 0.8s linear forwards;
+	opacity: 0;
+}
+
+@keyframes fade-in {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+

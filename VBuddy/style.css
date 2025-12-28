@@ -1,0 +1,114 @@
+/* CSS styles for the top section */
+header {
+  background-color: #f2f2f2; /* Set the background color as desired */
+  padding: 20px;
+  text-align: center;
+  z-index: 2;
+  height: 10%;
+}
+
+/* Style for the left button */
+.left {
+  position: fixed;
+  left: -0.02px;
+  top: 100px;
+  width: 55%;
+  height: 90%;
+  background-color: #CC00CC; /* Green color, you can change it */
+  color: white;
+  font-size: 50px;
+  border: none;
+  cursor: pointer;
+  transition: width 0.3s ease;
+  z-index: 1;
+ 
+}
+
+/* Style for the right button */
+.right {
+  position: fixed;
+  right: 0;
+  width: 55%;
+  top:100px;
+  height: 90%;
+  background-color: #f44336; /* Red color, you can change it */
+  color: white;
+  font-size: 50px;
+  border: none;
+  cursor: pointer;
+  transition: width 0.3s ease; /* Transition for width change */
+  z-index: 1;
+ }
+
+/* Hidden text for left button */
+.left .hidden-text {
+  display: none;
+  margin-top: 10px; /* Adjust the margin as needed */
+  font-size: 14px; /* Adjust the font size as needed */
+  animation: fly-in-left 0.5s ease forwards;
+}
+
+/* Hidden text for right button */
+.right .hidden-text {
+  display: none;
+  margin-top: 10px; /* Adjust the margin as needed */
+  font-size: 14px; /* Adjust the font size as needed */
+  animation: fly-in-right 0.5s ease forwards;
+}
+
+@keyframes fly-in-left {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fly-in-right {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Hover styles for left button */
+.left:hover {
+  width: 80%;
+}
+
+.left:hover + .right {
+  width: 20%;
+}
+
+/* Hover styles for right button */
+.right:hover {
+  width: 80%;
+}
+
+.right:hover + .left {
+  width: 20%;
+}
+
+.left:hover .hidden-text {
+  display: inline;
+  font-size: 50%;
+  text-align:center ;
+  padding-left: 100px;
+  padding-bottom: 70px;
+}
+
+
+.right:hover .hidden-text {
+  display: inline;
+  font-size: 50%;
+  text-align:center ;
+  padding-right:100px ;
+}
+

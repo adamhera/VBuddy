@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Choose Your Role</title>
+<style>
+  /* CSS styles for the top section */
+header {
+   
+/* Set the background color as desired */
+    text-align: center;
+
+  z-index: 2;
+  height: auto;
+  width: 100%;
+}
+
+
+/* Style for the left button */
+.left {
+  position: fixed;
+  left: -0.02px;
+  top: 100px;
+  width: 55%;
+  height: 90%;
+  background-color:whitesmoke; /* Green color, you can change it */
+  color: black;
+  font-size: 50px;
+  border: none;
+  cursor: pointer;
+  transition: width 0.3s ease;
+  z-index: 1;
+
+ 
+}
+
+/* Style for the right button */
+.right {
+  position: fixed;
+  right: 0;
+  width: 50%;
+  top:100px;
+  height: 90%;
+  background-color: #FF7F50; /* Red color, you can change it */
+  color: black;
+  font-size: 50px;
+  border: none;
+  cursor: pointer;
+  transition: width 0.3s ease; /* Transition for width change */
+  z-index: 1;
+
+ }
+
+/* Hidden text for left button */
+.left .hidden-text {
+  display: none;
+  margin-top: 10px; /* Adjust the margin as needed */
+  font-size: 14px; /* Adjust the font size as needed */
+  animation: fadeInLeft 0.5s ease forwards;
+}
+
+/* Hidden text for right button */
+.right .hidden-text {
+  display: none;
+  margin-top: 10px; /* Adjust the margin as needed */
+  font-size: 14px; /* Adjust the font size as needed */
+  animation: fadeInRight 0.5s ease forwards;
+}
+
+@keyframes fadeInLeft {
+   0% {
+      opacity: 0;
+      transform: translateX(-20px);
+   }
+   100% {
+      opacity: 1;
+      transform: translateX(0);
+   }
+}   
+
+@keyframes fadeInRight {
+   0% {
+      opacity: 0;
+      transform: translateX(20px);
+   }
+   100% {
+      opacity: 1;
+      transform: translateX(0);
+   }
+} 
+
+/* Hover styles for left button */
+.left:hover {
+  width: 80%;
+}
+
+.left:hover + .right {
+  width: 20%;
+  color: rgba(0,0,0,0);
+}
+
+/* Hover styles for right button */
+.right:hover {
+  width: 80%;
+}
+
+.right:hover + .left {
+  width: 20%;
+    color: rgba(0,0,0,0);
+}
+
+.left:hover .hidden-text {
+  display: inline;
+  font-size: 50%;
+  text-align:center ;
+  padding-left: 100px;
+  padding-bottom: 70px;
+}
+
+
+.right:hover .hidden-text {
+  display: inline;
+  font-size: 50%;
+  text-align:center ;
+  padding-right:100px ;
+}
+
+
+.fade-in {
+  animation: fade-in 0.8s linear forwards;
+  opacity: 0;
+}
+
+@keyframes fade-in {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+p{
+  font-family: sans-serif;
+    color: black;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 15px;
+    font-weight: normal;
+
+}
+body{
+     background-image: url("assets/img/hero/hero2.png");
+  background-size: cover;
+}
+header{
+
+}
+
+
+</style>
+</head>
+<body>
+  <header>
+
+    <h1> <div class="button"> <h1> <div class="button"><button onclick="window.location.href = '..VBuddy/index.html';" style="position: absolute;left: 46.5%; top: 68px">home</button> <button onclick="window.location.href = 'Dashboard/indexmentordash.php';" style="position: absolute;left: 50.5%; top: 68px">Next</button>
+    <h2 style= "font-size: 43px; position: absolute;left: 43.8%; top: -15px"> Select Role </h2>
+   </h1>
+   
+  </header>
+  
+  <div class="buttons-container">
+    <button onclick="window.location.href='mentorreg.html'" class="left">Mentor<br> <span class="hidden-text"><p class="fade-in" style="text-align: left;">
+A mentor is a person who provides guidance, support, and advice to someone less experienced or knowledgeable in a particular area. Mentors are typically individuals who have achieved a certain level of expertise or success in their field and are willing to share their knowledge and experiences with others to help them grow and develop.</p></span></button>
+    <button onclick="window.location.href='this.html' "class="right" >Mentee<br> <span class="hidden-text"><p class="fade-in">A mentee is an individual who seeks guidance, support, and knowledge from a more experienced person in a particular field or area of interest. The mentee is typically less experienced or knowledgeable than their mentor and looks to the mentor for advice and mentorship.</p></span></button>
+  </div>
+</body>
+</html>

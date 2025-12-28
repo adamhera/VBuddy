@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Choose Your Role</title>
+	<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet" />
+	<script src="https://kit.fontawesome.com/2b25f4f529.js" crossorigin="anonymous"></script>
+
+</head>
+
+<style>
+/* CSS styles for the top section */
+header{
+	text-align: center;
+	z-index: 2;
+}
+
+body{
+  background-image: url("assets/img/hero/hero3.png");
+  /*background-color: #f6f6f9;*/
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1{
+	font-family: 'Josefin Sans', sans-serif;
+	text-align: center;
+	padding-top: 2 rem;
+	color: #fff;
+	size: 130%;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+p{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 15px;
+  font-weight: normal;
+}
+
+header .button{
+	/*font-family: 'Josefin Sans', sans-serif;*/
+	display: flex;
+	align-items: center;
+	position: absolute;
+	padding-top: 1.5rem;
+	padding-left: 3rem;
+	justify-content: flex-end;
+	/*top: 35px;*/
+}
+
+header .button a{
+	color: #363949;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	position: relative;
+    transition: all 300ms ease;
+}
+
+header .button a:hover{
+	color: #f6f6f9;
+}
+
+/* Style for the left button */
+.left {
+  border: 2px;
+  border-color: #677483;
+  border-radius:50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 8px 22px;
+  position: fixed;
+  justify-content: center;
+  left: 10rem;
+  top: 120px;
+  width: 30%;
+  height: 65%;
+  /*color: #f6f6f9;*/
+  font-size: 50px;
+  border: none;
+  cursor: pointer;
+  transition: width 0.3s ease;
+  z-index: 1;
+}
+
+/* Style for the right button */
+.right {
+ border-radius:50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 8px 22px;
+  position: fixed;
+  justify-content: center;
+  right: 10rem;
+  top: 120px;
+  width: 30%;
+  height: 65%;
+  background-color: #677483;
+  color: #f6f6f9;
+  font-size: 50px;
+  border: none;
+  cursor: pointer;
+  transition: width 0.3s ease; /* Transition for width change */
+  z-index: 1;
+
+ }
+
+/* Hidden text for left button */
+.left .hidden-text {
+  display: none;
+  /*text-align: left;*/
+  margin-top: 10px; /* Adjust the margin as needed */
+  font-size: 14px; /* Adjust the font size as needed */
+  animation: fadeInLeft 0.5s ease forwards;
+}
+
+/* Hidden text for right button */
+.right .hidden-text {
+  display: none;
+ /* text-align: right;*/
+  margin-top: 10px; /* Adjust the margin as needed */
+  font-size: 14px; /* Adjust the font size as needed */
+  animation: fadeInRight 0.5s ease forwards;
+}
+
+@keyframes fadeInLeft {
+   0% {
+      opacity: 0;
+      transform: translateX(-20px);
+   }
+   100% {
+      opacity: 1;
+      transform: translateX(0);
+   }
+}   
+
+@keyframes fadeInRight {
+   0% {
+      opacity: 0;
+      transform: translateX(20px);
+   }
+   100% {
+      opacity: 1;
+      transform: translateX(0);
+   }
+} 
+
+/* Hover styles for left button */
+.left:hover {
+  width: 65%;
+}
+
+.left:hover + .right {
+  width: 10%;
+  /*color: rgba(0,0,0,0);*/
+}
+
+/* Hover styles for right button */
+.right:hover {
+  width: 70%;
+}
+
+.right:hover + .left {
+  width: 10%;
+  /*color: rgba(0,0,0,0);*/
+}
+
+.left:hover .hidden-text {
+  display: inline;
+  font-size: 50%;
+  text-align: center;
+  padding-left: 100px;
+  padding-bottom: 70px;
+}
+
+.right:hover .hidden-text {
+  display: inline;
+  font-size: 50%;
+  font-color: #f6f6f9;
+  text-align: center;
+  padding-right:100px;
+  padding-bottom: 70px;
+}
+
+.fade-in {
+  animation: fade-in 0.8s linear forwards;
+  opacity: 0;
+}
+
+@keyframes fade-in {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+</style>
+
+<body>
+  <header>
+    <div class="button">
+	  <a href="index.html">
+	<i class="fa-solid fa-house fa-2xl"></i>	
+	</a></div>
+	<h1>Select Role</h1>
+  </header>
+  
+  <div class="buttons-container">
+    <button onclick="window.location.href='mentorreg.php'" class="left">Mentor<br> <span class="hidden-text"><p class="fade-in">A mentor is a person who provides guidance, support, and advice to someone less experienced or knowledgeable in a particular area. Mentors are typically individuals who have achieved a certain level of expertise or success in their field and are willing to share their knowledge and experiences with others to help them grow and develop.</p></span></button>
+    <button onclick="window.location.href='this.php'" class="right">Mentee<br> <span class="hidden-text"><p class="fade-in">A mentee is an individual who seeks guidance, support, and knowledge from a more experienced person in a particular field or area of interest. The mentee is typically less experienced or knowledgeable than their mentor and looks to the mentor for advice and mentorship.</p></span></button>
+  </div>
+  
+  <script src="app.js"></script>
+</body>
+</html>

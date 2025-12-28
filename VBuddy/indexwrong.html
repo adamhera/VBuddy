@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+  color: #cc7a00;
+  background-image:url('');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #ffffff;
+}
+
+.container{
+
+}
+
+div {
+  max-width: 500px;
+  height: 100px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 6px 6px 6px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="sidenav">
+Mon-Fri: 8am to 2pm <br>
+Sat-Sun: 11am to 4pm <br><br>
+  <a href="../index.html">HOME</a>
+  <a href="#">ABOUT</a>
+  <a href="#">COFFEE</a>
+  <a href="#">CONTACT</a>
+  <a href="index.html">LOGIN</a>
+  <a href="signup/index.html">SIGNUP</a>
+  
+</div>
+
+<div class="main">
+  <h1>Coffee House</h1>
+  <h3></h3>
+  <fieldset>
+  <form method="POST" action="process.php">
+ 
+    <h3>Login</h3>
+    <p></p>
+   
+	<table width="30%">
+	<tr>
+	  <td colspan="2">Data not found </td>
+	</tr>
+	<tr>
+	  <td colspan="2">Wrong Username or Password</td>
+	 </tr>
+	<tr>
+	  <td colspan="2">&nbsp;</td>
+	 </tr>
+	<tr>
+	  <td>Username</td>
+	  <td> <input type="text" placeholder="Enter Username" name="username" id="username"required></td>
+	 </tr>
+	 <tr>
+	  <td>Password</td>
+	  <td> <input type="password" placeholder="Enter Password" name="password" id="password" required></td>
+     </tr>
+	 <tr>
+	  <td colspan="2">
+		<button type="button" class="cancelbtn" name="cancel">Cancel</button>
+		<button type="submit" class="signupbtn" name="login">Login</button> 
+	 </td>
+	</tr>
+	</table>
+		
+
+	  
+</form>
+
+</fieldset> 
+  
+  
+  
+</div>
+   
+</body>
+</html> 
